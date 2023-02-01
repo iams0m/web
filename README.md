@@ -1,2 +1,1 @@
-# web
-## multicampus Backend developer jobcamp
+# multicampus Backend developer jobcamp
