@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hi() {
+            alert('화이팅!')
+        }
+        function bye() {
+            alert('안녕!')
+        }
+        function check() {
+            id = "root"
+            pw = "1234"
+            id2 = document.getElementById('id2').value //"root"
+            pw2 = document.getElementById('pw2').value //"1234"
+            result = document.getElementById('result')
+            if (id == id2 && pw == pw2) {
+                //alert('로그인 성공')
+                result.innerHTML = "<font color = red>로그인 성공</font>"
+            }
+            else {
+                result.innerHTML = "<font color = blue>로그인 실패</font>"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="hi()">인사처리</button>
+    <button onclick="bye()">안녕처리</button>
+    <hr color="green">
+    <!-- value : 기본값 -->
+    아이디 : <input type="text" id="id2" value="root"><br>
+    패스워드 : <input type="text" id="pw2" value="1234"><br>
+    <button onclick="check()">로그인</button><br>
+    <div id="result">
+        결과
+    </div>
+
+</body>
+
+</html>
