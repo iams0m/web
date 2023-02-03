@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function () {
+            $('#b2').click(function () {
+                $.ajax({
+                    url: "search1.html",
+                    success: function (x) {
+                        $('#d1').html(x)
+                    }
+                })
+            })
+
+            $('#b3').click(function () {
+                $.ajax({
+                    url: "search2.html",
+                    success: function (x) {
+                        $('#d2').html(x)
+                    }
+                })
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <form>
+        <h1>사용하는 OTT명을 입력하세요.</h1>
+        <hr>
+        검색할 단어 <input type="text">
+        <button id="b1">검색</button>
+    </form>
+    <hr>
+    <button id="b2">NETFLIX</button>
+    <button id="b3">WATCHA</button>
+    <hr>
+    <div id="d1"></div>
+    <div id="d2"></div>
+</body>
+
+</html>
