@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Checkboxradio - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("input").checkboxradio();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="widget">
+        <h1>여행 계획 세우기</h1>
+
+        <h2>여행지 선택</h2>
+        <fieldset>
+            <label for="radio-1">제주</label>
+            <input type="radio" name="radio-1" id="radio-1">
+            <label for="radio-2">서울</label>
+            <input type="radio" name="radio-1" id="radio-2">
+            <label for="radio-3">부산</label>
+            <input type="radio" name="radio-1" id="radio-3">
+        </fieldset>
+
+        <h2>인원수</h2>
+        <fieldset>
+
+            <label for="checkbox-1">1명</label>
+            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+            <label for="checkbox-2">2명</label>
+            <input type="checkbox" name="checkbox-2" id="checkbox-2">
+            <label for="checkbox-3">3명</label>
+            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+            <label for="checkbox-4">4명</label>
+            <input type="checkbox" name="checkbox-4" id="checkbox-4">
+        </fieldset>
+
+        <h2>숙소유형</h2>
+        <fieldset>
+
+            <label for="checkbox-nested-1">호텔
+                <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1">
+            </label>
+            <label for="checkbox-nested-2">게스트 하우스
+                <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2">
+            </label>
+            <label for="checkbox-nested-3">펜션
+                <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+            </label>
+            <label for="checkbox-nested-4">풀빌라
+                <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4">
+            </label>
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>
